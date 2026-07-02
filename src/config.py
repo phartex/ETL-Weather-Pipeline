@@ -33,6 +33,13 @@ INPUT_FILE = DATA_DIR / "cities.csv"
 OUTPUT_FILE = DATA_DIR / "weather_data.csv"
 LOG_FILE = LOG_DIR / "pipeline.log"
 
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+
+
 if not API_KEY:
     raise ValueError("API_KEY not found.")
 

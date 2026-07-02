@@ -40,46 +40,31 @@ class WeatherTransformer:
         logger.info("Cleaning weather data...")
 
         for record in weather_data:
-
             cleaned_record = {
-
-                "City": record.get("name"),
-
-                "Country": record.get("sys", {}).get("country"),
-
-                "Temperature": record.get("main", {}).get("temp"),
-
-                "FeelsLike": record.get("main", {}).get("feels_like"),
-
-                "Humidity": record.get("main", {}).get("humidity"),
-
-                "Pressure": record.get("main", {}).get("pressure"),
-
-                "WindSpeed": record.get("wind", {}).get("speed"),
-
-                "Weather": (
+                "city": record.get("name"),
+                "country": record.get("sys", {}).get("country"),
+                "temperature": record.get("main", {}).get("temp"),
+                "feelslike": record.get("main", {}).get("feels_like"),
+                "humidity": record.get("main", {}).get("humidity"),
+                "pressure": record.get("main", {}).get("pressure"),
+                "windspeed": record.get("wind", {}).get("speed"),
+                "weather": (
                     record.get("weather", [{}])[0].get("main")
                     if record.get("weather")
                     else None
                 ),
-
-                "Description": (
+                "description": (
                     record.get("weather", [{}])[0].get("description")
                     if record.get("weather")
                     else None
                 ),
-
-                "ObservationTime": (
-                    datetime.fromtimestamp(record["dt"]).strftime(
-                        "%Y-%m-%d %H:%M:%S"
-                    )
+                "observationtime": (
+                    datetime.fromtimestamp(record["dt"]).strftime("%Y-%m-%d %H:%M:%S")
                     if record.get("dt")
                     else None
                 ),
-
-                "ExtractionTime": extraction_time,
+                "extractiontime": extraction_time,
             }
-
             cleaned_records.append(cleaned_record)
 
         logger.info(f"{len(cleaned_records)} records cleaned.")

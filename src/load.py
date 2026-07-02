@@ -2,69 +2,46 @@
 Load Module
 
 Responsible for:
-- Saving transformed data
-- Appending new records
-- Loading data into storage
+- Loading transformed data into PostgreSQL
 """
 
-
-from pathlib import Path
-
+from sqlalchemy import create_engine
 import pandas as pd
 
-from src.config import OUTPUT_FILE
+from src.config import (
+    DB_HOST,
+    DB_PORT,
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD,
+)
+
 from src.logger import get_logger
 
 logger = get_logger(__name__)
 
 
 class WeatherLoader:
-     """
-        Save DataFrame to CSV.
-        Creates a new file if one does not exist.
 
-        Args:
-            dataframe (pd.DataFrame)
-        """
-     
-     def save_to_csv(self, dataframe: pd.DataFrame) -> None:
-        """
-        Save DataFrame to CSV.
-        Creates a new file if one does not exist.
+    def __init__(self):
 
-        Args:
-            dataframe (pd.DataFrame)
-        """
+        self.engine = create_engine(
+            f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+        )
+
+    def load_to_database(self, dataframe: pd.DataFrame):
 
         if dataframe.empty:
-            logger.warning("DataFrame is empty. No data to save.")
+            logger.warning("No data to load.")
             return
-        
-        logger.info(f"Saving DataFrame to {OUTPUT_FILE}...")
 
-        dataframe.to_csv(OUTPUT_FILE, index=False)
+        logger.info("Loading data into PostgreSQL...")
 
-        logger.info(f"DataFrame saved successfully to {OUTPUT_FILE}.")
+        dataframe.to_sql(
+            "weather_data",
+            self.engine,
+            if_exists="append",
+            index=False,
+        )
 
-     def append_to_csv(self, dataframe: pd.DataFrame) -> None:
-        """
-        Append data to an existing CSV.
-
-        If the CSV doesn't exist, create it.
-
-        Args:
-            dataframe (pd.DataFrame)
-        """
-
-        if dataframe.empty:
-            logger.warning("DataFrame is empty. No data to append.")
-            return
-        
-        file_exists = Path(OUTPUT_FILE).exists()
-
-        logger.info(f"{'Appending to' if file_exists else 'Creating'} {OUTPUT_FILE}...")
-
-        dataframe.to_csv(OUTPUT_FILE, mode='a', header=not file_exists, index=False)
-
-        logger.info(f"Data {'appended' if file_exists else 'saved'} successfully to {OUTPUT_FILE}.")
-        
+        logger.info("Data loaded successfully.")

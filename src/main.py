@@ -99,7 +99,7 @@ class WeatherETLPipeline:
 
         dataframe = pd.read_csv(transformed_file)
 
-        self.loader.append_to_csv(dataframe)
+        self.loader.load_to_database(dataframe)
 
         logger.info("Load completed successfully.")
 

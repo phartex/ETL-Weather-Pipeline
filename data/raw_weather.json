@@ -9,30 +9,30 @@
                 "id": 804,
                 "main": "Clouds",
                 "description": "overcast clouds",
-                "icon": "04d"
+                "icon": "04n"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 27.16,
-            "feels_like": 30.1,
-            "temp_min": 27.16,
-            "temp_max": 27.16,
-            "pressure": 1012,
-            "humidity": 80,
-            "sea_level": 1012,
-            "grnd_level": 1012
+            "temp": 24.69,
+            "feels_like": 25.59,
+            "temp_min": 24.69,
+            "temp_max": 24.69,
+            "pressure": 1015,
+            "humidity": 91,
+            "sea_level": 1015,
+            "grnd_level": 1015
         },
         "visibility": 10000,
         "wind": {
-            "speed": 4.05,
-            "deg": 225,
-            "gust": 6.12
+            "speed": 2.01,
+            "deg": 242,
+            "gust": 4.63
         },
         "clouds": {
-            "all": 93
+            "all": 100
         },
-        "dt": 1783007715,
+        "dt": 1783029839,
         "sys": {
             "country": "NG",
             "sunrise": 1782970437,
@@ -50,36 +50,33 @@
         },
         "weather": [
             {
-                "id": 500,
-                "main": "Rain",
-                "description": "light rain",
-                "icon": "10d"
+                "id": 803,
+                "main": "Clouds",
+                "description": "broken clouds",
+                "icon": "04n"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 28.12,
-            "feels_like": 31.62,
-            "temp_min": 28.12,
-            "temp_max": 28.12,
-            "pressure": 1011,
-            "humidity": 75,
-            "sea_level": 1011,
-            "grnd_level": 957
+            "temp": 24.07,
+            "feels_like": 24.86,
+            "temp_min": 24.07,
+            "temp_max": 24.07,
+            "pressure": 1014,
+            "humidity": 89,
+            "sea_level": 1014,
+            "grnd_level": 960
         },
         "visibility": 10000,
         "wind": {
-            "speed": 2.53,
-            "deg": 273,
-            "gust": 3.03
-        },
-        "rain": {
-            "1h": 0.15
+            "speed": 1.74,
+            "deg": 151,
+            "gust": 1.78
         },
         "clouds": {
-            "all": 51
+            "all": 79
         },
-        "dt": 1783008092,
+        "dt": 1783029966,
         "sys": {
             "country": "NG",
             "sunrise": 1782969280,
@@ -100,30 +97,30 @@
                 "id": 800,
                 "main": "Clear",
                 "description": "clear sky",
-                "icon": "01d"
+                "icon": "01n"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 26.32,
-            "feels_like": 26.32,
-            "temp_min": 24.88,
-            "temp_max": 27.95,
-            "pressure": 1023,
-            "humidity": 35,
-            "sea_level": 1023,
-            "grnd_level": 1019
+            "temp": 17.79,
+            "feels_like": 17.06,
+            "temp_min": 16.66,
+            "temp_max": 18.94,
+            "pressure": 1027,
+            "humidity": 55,
+            "sea_level": 1027,
+            "grnd_level": 1023
         },
         "visibility": 10000,
         "wind": {
             "speed": 1.34,
-            "deg": 26,
+            "deg": 66,
             "gust": 3.58
         },
         "clouds": {
-            "all": 6
+            "all": 0
         },
-        "dt": 1783007894,
+        "dt": 1783029416,
         "sys": {
             "type": 2,
             "id": 2075535,
@@ -143,36 +140,36 @@
         },
         "weather": [
             {
-                "id": 800,
-                "main": "Clear",
-                "description": "clear sky",
-                "icon": "01d"
+                "id": 801,
+                "main": "Clouds",
+                "description": "few clouds",
+                "icon": "02d"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 37.03,
-            "feels_like": 41.69,
-            "temp_min": 35.17,
-            "temp_max": 38.49,
-            "pressure": 1015,
+            "temp": 37.85,
+            "feels_like": 43.54,
+            "temp_min": 35.15,
+            "temp_max": 39.99,
+            "pressure": 1012,
             "humidity": 41,
-            "sea_level": 1015,
-            "grnd_level": 1013
+            "sea_level": 1012,
+            "grnd_level": 1010
         },
         "visibility": 10000,
         "wind": {
-            "speed": 1.79,
-            "deg": 237,
-            "gust": 2.68
+            "speed": 0.89,
+            "deg": 285,
+            "gust": 0.89
         },
         "clouds": {
-            "all": 0
+            "all": 24
         },
-        "dt": 1783008135,
+        "dt": 1783029537,
         "sys": {
             "type": 2,
-            "id": 2009754,
+            "id": 2111743,
             "country": "US",
             "sunrise": 1782984537,
             "sunset": 1783038653
@@ -192,30 +189,30 @@
                 "id": 804,
                 "main": "Clouds",
                 "description": "overcast clouds",
-                "icon": "04n"
+                "icon": "04d"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 21.72,
-            "feels_like": 22.3,
-            "temp_min": 20.44,
-            "temp_max": 22.57,
-            "pressure": 1008,
-            "humidity": 90,
-            "sea_level": 1008,
-            "grnd_level": 1006
+            "temp": 20.63,
+            "feels_like": 21.15,
+            "temp_min": 19.77,
+            "temp_max": 21.46,
+            "pressure": 1012,
+            "humidity": 92,
+            "sea_level": 1012,
+            "grnd_level": 1010
         },
         "visibility": 10000,
         "wind": {
-            "speed": 0.89,
-            "deg": 93,
-            "gust": 1.34
+            "speed": 0.45,
+            "deg": 101,
+            "gust": 1.79
         },
         "clouds": {
             "all": 100
         },
-        "dt": 1783007912,
+        "dt": 1783029711,
         "sys": {
             "type": 2,
             "id": 268395,
@@ -226,142 +223,6 @@
         "timezone": 32400,
         "id": 1850144,
         "name": "Tokyo",
-        "cod": 200
-    },
-    {
-        "coord": {
-            "lon": 18.4232,
-            "lat": -33.9258
-        },
-        "weather": [
-            {
-                "id": 803,
-                "main": "Clouds",
-                "description": "broken clouds",
-                "icon": "04n"
-            }
-        ],
-        "base": "stations",
-        "main": {
-            "temp": 13.37,
-            "feels_like": 12.83,
-            "temp_min": 13.1,
-            "temp_max": 14.08,
-            "pressure": 1022,
-            "humidity": 79,
-            "sea_level": 1022,
-            "grnd_level": 1020
-        },
-        "visibility": 10000,
-        "wind": {
-            "speed": 3.58,
-            "deg": 316,
-            "gust": 7.15
-        },
-        "clouds": {
-            "all": 84
-        },
-        "dt": 1783008124,
-        "sys": {
-            "type": 2,
-            "id": 2073005,
-            "country": "ZA",
-            "sunrise": 1782971528,
-            "sunset": 1783007290
-        },
-        "timezone": 7200,
-        "id": 3369157,
-        "name": "Cape Town",
-        "cod": 200
-    },
-    {
-        "coord": {
-            "lon": 2.3488,
-            "lat": 48.8534
-        },
-        "weather": [
-            {
-                "id": 804,
-                "main": "Clouds",
-                "description": "overcast clouds",
-                "icon": "04d"
-            }
-        ],
-        "base": "stations",
-        "main": {
-            "temp": 20.36,
-            "feels_like": 20.2,
-            "temp_min": 20.36,
-            "temp_max": 20.36,
-            "pressure": 1024,
-            "humidity": 67,
-            "sea_level": 1024,
-            "grnd_level": 1014
-        },
-        "visibility": 10000,
-        "wind": {
-            "speed": 4.66,
-            "deg": 296,
-            "gust": 8.06
-        },
-        "clouds": {
-            "all": 100
-        },
-        "dt": 1783007998,
-        "sys": {
-            "country": "FR",
-            "sunrise": 1782964296,
-            "sunset": 1783022239
-        },
-        "timezone": 7200,
-        "id": 2988507,
-        "name": "Paris",
-        "cod": 200
-    },
-    {
-        "coord": {
-            "lon": 10.5,
-            "lat": 51.5
-        },
-        "weather": [
-            {
-                "id": 803,
-                "main": "Clouds",
-                "description": "broken clouds",
-                "icon": "04d"
-            }
-        ],
-        "base": "stations",
-        "main": {
-            "temp": 20.3,
-            "feels_like": 20.29,
-            "temp_min": 19.74,
-            "temp_max": 20.86,
-            "pressure": 1018,
-            "humidity": 73,
-            "sea_level": 1018,
-            "grnd_level": 983
-        },
-        "visibility": 10000,
-        "wind": {
-            "speed": 8.19,
-            "deg": 310,
-            "gust": 12.6
-        },
-        "clouds": {
-            "all": 69
-        },
-        "dt": 1783008147,
-        "sys": {
-            "type": 2,
-            "id": 197911,
-            "country": "DE",
-            "sunrise": 1782961536,
-            "sunset": 1783021086
-        },
-        "timezone": 7200,
-        "id": 2921044,
-        "name": "Germany",
         "cod": 200
     }
 ]
