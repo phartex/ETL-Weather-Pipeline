@@ -21,15 +21,6 @@ def load(ti):
     transformed_file = ti.xcom_pull(task_ids="transform")
     pipeline.load(transformed_file)
 
-
-# with DAG(
-#     dag_id="weather_etl_pipeline",
-#     start_date=datetime(2025, 1, 1),
-#     schedule="@daily",
-#     catchup=False,
-#     tags=["etl", "weather"],
-# ) as dag:
-
 with DAG(
     dag_id="weather_etl_pipeline",
     start_date=datetime(2025, 1, 1),
